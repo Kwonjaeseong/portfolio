@@ -1,0 +1,294 @@
+body {
+  overflow-x: hidden;
+}
+
+/* left menu */
+.left {
+  background-color: #444;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 410px;
+}
+
+.left_inner {
+  display: block;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  margin-left: 100px;
+}
+
+.logo img {
+  width: 200px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.menu {
+}
+
+.gnb li {
+  display: block;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.gnb li a {
+  color: #bbb;
+  font-size: 15px;
+}
+
+.gnb li a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* right */
+
+.right {
+  display: block;
+  overflow-y: auto;
+  height: auto;
+  margin-left: 410px;
+  width: 1510px;
+  height: auto;
+  font-family: "NanumSquare", sans-serif;
+}
+
+.right .right_inner {
+  margin: 180px 80px 0 170px;
+}
+
+.up_contents {
+  display: flex;
+  gap: 77px;
+}
+
+.web_title {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.web_tt {
+  font-size: 20px;
+  font-family: "NanumSquare", sans-serif;
+}
+
+.web_txt {
+  width: 500px;
+  height: 100px;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+.write {
+  color: #898989;
+  margin-bottom: 30px;
+}
+
+.lan {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.lan ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lan span {
+  color: #898989;
+}
+
+.web_view {
+  width: 586px;
+  height: 433px;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.web_view .view img {
+  display: block;
+  width: 450px;
+  height: 433px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.link {
+}
+
+.lks {
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lks li {
+  display: flex;
+}
+
+.lks li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #898989;
+  border-radius: 20px;
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+  color: #898989;
+  gap: 10px;
+}
+
+.lks li a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+.talk {
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+
+.sm_tt {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.talk_txt {
+  width: 1000px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.function {
+  margin-bottom: 100px;
+}
+
+.fun_list {
+  display: grid;
+  grid-template-columns: repeat(2, 377px);
+  justify-content: center;
+  gap: 30px;
+}
+
+.function .sm_tt {
+  margin-bottom: 60px;
+}
+
+.fun_list li {
+  width: 377px;
+  height: 410px;
+  display: block;
+  overflow: hidden;
+}
+
+.fun_list li .bt {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.fun_list li .st {
+  text-align: center;
+  color: #898989;
+  font-size: 15px;
+}
+
+.fun_list li .fun_img {
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 377px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.fun_list li .fun_img img {
+  width: 377px;
+  height: 350px;
+  display: block;
+}
+
+.more_web {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.more_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.more_btn li {
+  display: flex;
+}
+
+.more_btn li a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+}
+
+.more_btn li a img:hover {
+  box-shadow: 10px 10px 20px black;
+}
+
+/* 버드와이저 롤링배너 */
+.bud_img {
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 377px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.budbeats {
+  width: 160px;
+  height: 50px;
+  display: block;
+  border-radius: 20px;
+  border: 1.5px solid #dc0019;
+  line-height: 50px;
+}
+.budbeats a {
+  width: 160px;
+  height: 50px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  line-height: 40px;
+}
+
+.budbeats a > div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    left: 0;
+  }
+  to {
+    left: -1000px;
+  }
+}
+
+.budbeats a > div img {
+  /* max-width: 100%; */
+}
