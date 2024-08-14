@@ -1,0 +1,61 @@
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 4% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 15px;
+}
+
+/* modal img */
+.modal_img {
+  display: block;
+  text-align: center;
+}
+
+.modal_img img {
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 60px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* mark */
+
+.mark {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.mark img {
+  width: 60px;
+  height: 60px;
+}

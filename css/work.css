@@ -126,3 +126,9 @@ a {
   width: 245px;
   height: 196px;
 }
+
+/* modal */
+
+.list li a {
+  text-indent: -10000px;
+}
