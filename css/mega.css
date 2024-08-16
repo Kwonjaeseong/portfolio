@@ -22,8 +22,7 @@
   margin-bottom: 30px;
 }
 
-.menu {
-}
+.menu {}
 
 .gnb li {
   display: block;
@@ -53,8 +52,7 @@
   font-family: "NanumSquare", sans-serif;
 }
 
-.right .right_inner {
-}
+.right .right_inner {}
 
 .pdf li {
   width: 1510px;
@@ -66,4 +64,20 @@
   width: 1510px;
   height: 1074px;
   display: block;
+}
+
+
+.play_ui h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "NanumSquare", sans-serif;
+  font-weight: 900;
+  margin-bottom: 100px;
+}
+
+.pdf .play_ui img {
+  display: block;
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;
 }
