@@ -92,16 +92,16 @@ a {
 
 .list {
   display: grid;
-  grid-template-columns: repeat(4, 275px);
+  grid-template-columns: repeat(3, 401px);
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-top: 130px;
+  margin-top: 20px;
 }
 
 .list li {
-  width: 275px;
-  height: 344px;
+  width: 440px;
+  height: 440px;
 }
 
 .list li a {
@@ -111,7 +111,8 @@ a {
 }
 
 .list li .bt {
-  font-size: 19px;
+  margin-top: 20px;
+  font-size: 23px;
   text-align: center;
   padding: 15px 0 15px 0;
 }
@@ -123,12 +124,32 @@ a {
 }
 
 .list li a img {
-  width: 245px;
-  height: 196px;
+  width: 380px;
+  height: 350px;
+  border-radius: 10px;
 }
 
 /* modal */
 
 .list li a {
   text-indent: -10000px;
+}
+
+/* more 버튼 */
+
+.btn-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 15px 30px 15px 30px;
+  background-color: #777;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 900px;
+  border: 1px solid #b9b9b9;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 100px;
 }
