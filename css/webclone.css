@@ -81,6 +81,14 @@ body {
   width: 50px;
 }
 
+.bc_logo img {
+  width: 80px;
+}
+
+.bd_logo img {
+  width: 100px;
+}
+
 .web_tt {
   font-size: 20px;
 }
@@ -126,7 +134,7 @@ body {
 
 .web_view .view img {
   display: block;
-  width: 500px;
+  width: 498px;
   height: 370px;
   object-fit: cover;
 }
@@ -273,8 +281,8 @@ body {
 .bud_img {
   margin-bottom: 20px;
   overflow: hidden;
-  width: 377px;
-  height: 300px;
+  width: 285px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
