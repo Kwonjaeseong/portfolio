@@ -13,15 +13,21 @@
   display: flex;
 }
 
+.rt_left h2 {
+  font-weight: 400;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px;
+}
+
 .right .rt_right {
   position: absolute;
-  top: 300px;
-  right: 200px;
+  top: 230px;
+  right: 130px;
 }
 
 .self_img {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   background: url(/images/self.jpg) no-repeat center; /* css 이미지 url */
   background-size: cover;
   transform: skewY(10deg);
@@ -47,7 +53,7 @@ a {
 
 .rt_left .name {
   display: flex;
-  font-size: 17px;
+  font-size: 19px;
   color: #767676;
   font-weight: 400;
   margin-bottom: 20px;
@@ -66,15 +72,15 @@ a {
   float: none;
   display: table;
   width: auto;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 45px;
+  line-height: 45px;
   font-weight: 500;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 span.gold-title {
-  font-size: 40px !important;
+  font-size: 45px !important;
   margin: -10px 0;
   color: #ff3d00;
   font-weight: 500;

@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/work.css" />
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -36,42 +36,42 @@
           <div class="up_bar">
             <h3 class="w_title">포트폴리오</h3>
             <ul class="w_list">
-              <li data-id="all"><a href="#">All</a></li>
-              <li data-id="web"><a href="#">Web Design</a></li>
-              <li data-id="ui"><a href="#">UI/UX</a></li>
-              <li data-id="gd"><a href="#">Graphic Design</a></li>
+              <li data-filter="*" class="is-checked"><a href="#">All</a></li>
+              <li data-filter=".web"><a href="#">Web Design</a></li>
+              <li data-filter=".ui"><a href="#">UI/UX</a></li>
+              <li data-filter=".gd"><a href="#">Graphic Design</a></li>
             </ul>
           </div>
-          <ul class="list">
-            <li data-item="web">
+          <ul class="list grid">
+            <li class="element-item web" data-category="web">
               <a href="/page/budweiser.html">
                 <img src="/images/bd-thumb.png" alt="" />
               </a>
               <h3 class="bt">BUDWEISER</h3>
               <p class="st">Web Design</p>
             </li>
-            <li data-item="web">
+            <li class="element-item web" data-category="web">
               <a href="/page/bccard.html">
                 <img src="/images/bc-thumb.png" alt="" />
               </a>
               <h3 class="bt">BC CARD</h3>
               <p class="st">Web Design</p>
             </li>
-            <li data-item="web">
+            <li class="element-item web" data-category="web">
               <a href="/page/ediya.html">
                 <img src="/images/ediya-thumb2.png" alt="" />
               </a>
               <h3 class="bt">EDIYA COFFEE</h3>
               <p class="st">Web Design</p>
             </li>
-            <li data-item="ui">
+            <li class="element-item ui" data-category="ui">
               <a href="/page/megacoffee.html">
                 <img src="/images/mega-work.png" alt="" />
               </a>
               <h3 class="bt">MEGA COFFEE Redesign</h3>
               <p class="st">UI/UX</p>
             </li>
-            <li data-item="gd">
+            <li class="element-item gd" data-category="gd">
               <a href="#" class="btn">
                 <img src="/images/hotdeal_thumb.jpg" alt="" />
                 MODAL_1
@@ -79,7 +79,7 @@
               <h3 class="bt">핫딜위크 이벤트 페이지</h3>
               <p class="st">Graphic Design</p>
             </li>
-            <li data-item="gd">
+            <li class="element-item gd" data-category="gd">
               <a href="#" class="btn">
                 <img src="/images/himart_thumb.png" alt="" />
                 MODAL_2
@@ -87,7 +87,7 @@
               <h3 class="bt">하이마트 이벤트 포스터</h3>
               <p class="st">Graphic Design</p>
             </li>
-            <li data-item="gd">
+            <li class="element-item gd" data-category="gd">
               <a href="#" class="btn">
                 <img src="/images/heal_thumb.png" alt="" />
                 MODAL_3
@@ -95,7 +95,7 @@
               <h3 class="bt">헬스장 포스터</h3>
               <p class="st">Graphic Design</p>
             </li>
-            <li data-item="gd">
+            <li class="element-item gd" data-category="gd">
               <a href="#" class="btn">
                 <img src="/images/greencar_thumb.png" alt="" />
                 MODAL_4
@@ -103,7 +103,7 @@
               <h3 class="bt">GREEN CAR</h3>
               <p class="st">Graphic Design</p>
             </li>
-            <li data-item="gd">
+            <li class="element-item gd" data-category="gd">
               <a href="#" class="btn">
                 <img src="/images/jsair_thumb.png" alt="" />
                 MODAL_5
@@ -111,7 +111,7 @@
               <h3 class="bt">항공사 배너</h3>
               <p class="st">Graphic Design</p>
             </li>
-            <li data-item="gd">
+            <li class="element-item gd" data-category="gd">
               <a href="#" class="btn">
                 <img src="/images/onepiece-thumb.jpg" alt="" />
                 MODAL_6
@@ -119,7 +119,7 @@
               <h3 class="bt">원피스 매거진</h3>
               <p class="st">Graphic Design</p>
             </li>
-            <li data-item="gd">
+            <li class="element-item gd" data-category="gd">
               <a href="#" class="btn">
                 <img src="/images/jualy_thumb.png" alt="" />
                 MODAL_7
@@ -128,7 +128,7 @@
               <p class="st">Graphic Design</p>
             </li>
           </ul>
-          <button class="btn-more">MORE</button>
+          <!-- <button class="btn-more">MORE</button> -->
         </div>
       </div>
     </div>

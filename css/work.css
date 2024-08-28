@@ -33,7 +33,7 @@
 
 .gnb li a {
   color: #bbb;
-  font-size: 15px;
+  font-size: 19px;
 }
 
 .gnb li a:hover {
@@ -88,6 +88,7 @@ a {
 
 .w_list {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .list {
@@ -96,12 +97,12 @@ a {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .list li {
   width: 380px;
-  height: 370px;
+  height: 400px;
 }
 
 .list li a {
@@ -154,4 +155,20 @@ a {
   cursor: pointer;
   color: #fff;
   margin-top: 0px;
+}
+
+/* //isotope 필터 */
+
+.grid {
+  display: flex; /* 자식 요소들을 플렉스 컨테이너로 설정 */
+  flex-wrap: wrap; /* 자식 요소들이 줄 바꿈 되도록 설정 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  width: 80%; /* 원하는 너비로 설정 */
+  margin: 0 auto; /* 부모 요소를 가운데 정렬 */
+  padding: 0;
+  list-style: none;
+}
+.element-item {
+  width: 30%;
+  margin: 10px;
 }
