@@ -136,7 +136,6 @@ body {
 .web_view {
   width: 500px;
   height: 370px;
-  align-items: center;
   overflow: hidden;
   border: 1px solid #eee;
   border-radius: 15px;
@@ -147,6 +146,7 @@ body {
   width: 498px;
   height: 370px;
   object-fit: cover;
+  max-width: 100%;
 }
 
 .link {
@@ -214,11 +214,13 @@ body {
 }
 
 .fun_list {
-  /* display: grid; */
+  display: flex;
   /* grid-template-columns: repeat(2, 377px); */
   /* justify-content: center; */
   gap: 15px;
   display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .function .sm_tt {
@@ -343,3 +345,5 @@ body {
 .budbeats a > div img {
   /* max-width: 100%; */
 }
+
+/* 이디야커피 */
