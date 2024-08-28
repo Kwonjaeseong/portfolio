@@ -22,7 +22,7 @@
 .self_img {
   width: 400px;
   height: 400px;
-  background: url(/images/self.jpg) no-repeat center; /* css 이미지 url */
+  background: url(./images/self.jpg) no-repeat center; /* css 이미지 url */
   background-size: cover;
   transform: skewY(10deg);
 }
