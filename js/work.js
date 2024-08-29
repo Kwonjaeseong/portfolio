@@ -17,38 +17,26 @@ $(document).ready(function () {
     $(this).addClass("is-checked");
   });
 
-  // 모달 팝업 기능
-  var modals = document.getElementsByClassName("modal");
-  var modalBtns = document.getElementsByClassName("btn");
-  var closeBtns = document.getElementsByClassName("close");
-  var funcs = [];
+  // 모달 콘텐츠 로드 및 이벤트 핸들러 설정
+  $(".modal_list").load("/page/graphic.html", function () {
+    // 로드 후 모달 버튼 이벤트 재설정
+    $("a.btn").on("click", function (e) {
+      e.preventDefault(); // 기본 링크 동작 방지
 
-  function Modal(num) {
-    return function () {
-      modalBtns[num].onclick = function (e) {
-        e.preventDefault();
-        modals[num].style.display = "block";
-      };
+      var modalId = $(this).attr("data-modal-id"); // 버튼의 data-modal-id 속성에서 모달 ID 가져오기
+      $("#" + modalId).show(); // 해당 모달 표시
+    });
 
-      closeBtns[num].onclick = function () {
-        modals[num].style.display = "none";
-      };
-    };
-  }
-
-  // 모달 버튼 이벤트 설정
-  for (var i = 0; i < modalBtns.length; i++) {
-    funcs[i] = Modal(i);
-  }
-
-  for (var j = 0; j < funcs.length; j++) {
-    funcs[j]();
-  }
+    // 모달 닫기 버튼 클릭 이벤트 설정
+    $(".close").on("click", function () {
+      $(this).closest(".modal").hide(); // 닫기 버튼이 포함된 모달 숨기기
+    });
+  });
 
   // 모달 외부 클릭 시 닫기
-  window.onclick = function (event) {
-    if (event.target.className === "modal") {
-      event.target.style.display = "none";
+  $(window).on("click", function (event) {
+    if ($(event.target).hasClass("modal")) {
+      $(event.target).hide();
     }
-  };
+  });
 });

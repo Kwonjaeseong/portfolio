@@ -72,7 +72,7 @@
               <p class="st">UI/UX</p>
             </li>
             <li class="element-item gd" data-category="gd">
-              <a href="#" class="btn">
+              <a href="#" class="btn" data-modal-id="modal1">
                 <img src="/images/hotdeal_thumb.jpg" alt="" />
                 MODAL_1
               </a>
@@ -80,7 +80,7 @@
               <p class="st">Graphic Design</p>
             </li>
             <li class="element-item gd" data-category="gd">
-              <a href="#" class="btn">
+              <a href="#" class="btn" data-modal-id="modal2">
                 <img src="/images/himart_thumb.png" alt="" />
                 MODAL_2
               </a>
@@ -88,7 +88,7 @@
               <p class="st">Graphic Design</p>
             </li>
             <li class="element-item gd" data-category="gd">
-              <a href="#" class="btn">
+              <a href="#" class="btn" data-modal-id="modal3">
                 <img src="/images/heal_thumb.png" alt="" />
                 MODAL_3
               </a>
@@ -96,7 +96,7 @@
               <p class="st">Graphic Design</p>
             </li>
             <li class="element-item gd" data-category="gd">
-              <a href="#" class="btn">
+              <a href="#" class="btn" data-modal-id="modal4">
                 <img src="/images/greencar_thumb.png" alt="" />
                 MODAL_4
               </a>
@@ -104,7 +104,7 @@
               <p class="st">Graphic Design</p>
             </li>
             <li class="element-item gd" data-category="gd">
-              <a href="#" class="btn">
+              <a href="#" class="btn" data-modal-id="modal5">
                 <img src="/images/jsair_thumb.png" alt="" />
                 MODAL_5
               </a>
@@ -112,7 +112,7 @@
               <p class="st">Graphic Design</p>
             </li>
             <li class="element-item gd" data-category="gd">
-              <a href="#" class="btn">
+              <a href="#" class="btn" data-modal-id="modal6">
                 <img src="/images/onepiece-thumb.jpg" alt="" />
                 MODAL_6
               </a>
@@ -120,7 +120,7 @@
               <p class="st">Graphic Design</p>
             </li>
             <li class="element-item gd" data-category="gd">
-              <a href="#" class="btn">
+              <a href="#" class="btn" data-modal-id="modal7">
                 <img src="/images/jualy_thumb.png" alt="" />
                 MODAL_7
               </a>
@@ -136,8 +136,10 @@
     <div class="modal_list"></div>
   </body>
   <script>
-    // contact
-    $(".modal_list").load("/page/graphic.html");
+    $(document).ready(function () {
+      // 페이지가 로드될 때마다 모달 콘텐츠를 로드합니다.
+      $(".modal_list").load("/page/graphic.html");
+    });
   </script>
   <script src="/js/work.js"></script>
 </html>
