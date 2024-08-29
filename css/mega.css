@@ -85,12 +85,20 @@
   margin-top: 100px;
 }
 
-.pdf .play_ui video {
+.video-container {
+  width: 1000px;
+  height: 520px; /* 원래 비디오 높이에서 80px을 뺀 값 */
+  margin: 0 auto;
+  margin-top: 100px;
+  overflow: hidden; /* 넘치는 부분을 숨김 */
+  position: relative;
+}
+
+.video-container video {
   display: block;
   width: 1000px;
   height: 600px;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin-top: -60px; /* 윗부분을 60px 위로 이동하여 가림 */
 }
 
 /* pdf,피그마 링크 */
